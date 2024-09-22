@@ -1,7 +1,7 @@
 #!/bin/bash
 #Script to save the modified configuration as modified_qemu_aarch64_virt_defconfig and linux kernel configuration.
 #Author: Siddhant Jajoo.
-
+echo "Creating new config file"
 cd `dirname $0`
 source shared.sh
 mkdir -p base_external/configs/
