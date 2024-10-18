@@ -4,13 +4,13 @@ case "$1" in
     start)
         echo "Startup to load the scull and the faulty driver"
         /usr/bin/module_load
-        /usr/bin/scull_load
+        /usr/bin/scull_load faulty
         modprobe hello
         ;;
     stop)
         echo "Shutdown to unload the scull and the faulty driver"
         /usr/bin/module_unload
-        /usr/bin/scull_unload
+        /usr/bin/scull_unload faulty
         rmmod hello
         ;;
     *)
