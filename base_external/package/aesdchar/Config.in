@@ -1,0 +1,5 @@
+config BR2_PACKAGE_AESDCHAR
+	bool "aesdchar"
+	help
+	  Supports building and installing aesd character driver into root fs.
+	  Used to understand buildroot external trees and package builds.
