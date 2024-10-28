@@ -6,14 +6,14 @@ case "$1" in
         /usr/bin/module_load faulty
         /usr/bin/scull_load 
         modprobe hello
-        aesdchar_load
+        /usr/bin/aesdchar_load
         ;;
     stop)
         echo "Shutdown to unload the scull and the faulty driver"
         /usr/bin/module_unload faulty 
         /usr/bin/scull_unload 
         rmmod hello
-        aesdchar_unload
+        /usr/bin/aesdchar_unload
         ;;
     *)
         echo "Usage: $0 {start|stop}"
